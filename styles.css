@@ -1,0 +1,290 @@
+html, body {
+    background-color: #6D9349; 
+}
+
+
+h2 {
+    font-family: "Dokdo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #260C1A;
+    font-size: 45px; 
+    margin: 0px; 
+}
+
+h3 {
+    font-family: "Dokdo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #260C1A;
+    font-size: 30px; 
+    margin: 0px;
+}
+
+p, li {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #260C1A;
+    font-size: 22px; 
+}
+
+iframe {
+    border: none;
+}
+
+.nav_link {
+    text-decoration: none; 
+    color: #260C1A;
+    font-size: 22px; 
+}
+
+.nav_link:hover {
+    color: #432E36;
+    scale: 1.1;
+    transition: scale 0.3s ease;
+}
+
+a {
+    color: #260C1A;
+}
+
+a:hover {
+    color: #814c60;
+    transition: background-color 0.5s ease-in-out;
+}
+
+nav {
+    display: flex; 
+    justify-content: center; 
+    justify-self: center;
+    gap: 50px; 
+    font-size: 18px;
+    font-family: "dokdo", system-ui;
+    position: sticky;
+    top: 20px;
+    width: 30%;
+    background-color: #FFF4E2;
+    padding: 15px 0;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1000; 
+    box-shadow: 0px 5px 5px #1a2c0a5d;
+}
+
+img {
+    width: 80%;
+    border-radius: 20px;
+    display: flex; 
+    justify-self: center; 
+    align-self: center;
+}
+
+form {
+    font-family: "Gaegu", sans-serif;
+    font-size: 22px; 
+}
+
+.contact-input {
+    display: none;  
+}
+
+.image {
+    height: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-content: center;
+    text-align: center; 
+}
+
+.Section1 {
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    height: 800px; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.HomePage {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute; 
+    top: -100px;
+}
+
+
+.Section2, .Section3, .Section4, .Section5 {
+    display: flex; 
+    justify-content: center; 
+    border-radius: 50px;
+    background-color: #FFF4E2;
+    margin: 50px; 
+    padding: 30px; 
+    width: 50%;
+    justify-self: center; 
+    box-shadow: 0px 5px 5px #1a2c0a2e;
+}
+
+.Section2 {
+    align-items: center; 
+    margin-top: 0px; 
+}
+
+.Section3, .Section4, .Section5 {
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#Section2, #Section3, #Section4, #Section5 {
+    scroll-margin-top: 50px;
+} 
+
+.experience_title {
+    margin: 0px; 
+}
+
+.buttons {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.btn-shape {
+    font-family: "dokdo", system-ui;
+    font-size: 30px; 
+    transition: all .3s linear;
+    width: 168px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    outline: none;
+    background-color: #6D9349;
+    border-radius: 50px;
+    border: 0px;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
+    color: #260C1A;
+}
+
+.btn-shape::after,
+.btn-shape::before {
+    content: '';
+    position: absolute;
+    background-color: #6D9349;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    left: 0;
+    border-radius: 100px;
+    bottom: 0;
+    z-index: -2;
+    transition: all .3s linear;
+}
+
+.btn-shape span {
+    font-size: 22px;
+    font-weight: 700;
+    transition: all .3s linear;
+    color: #ffe9c9;
+    text-transform: capitalize;
+}
+
+.btn-shape:hover {
+    transform: translate(-12px, -12px);
+}
+
+.btn-shape:hover:after {
+    transform: translate(6px, 6px);
+    opacity: .5;
+}
+
+.btn-shape:hover::before {
+    transform: translate(12px, 12px);
+    opacity: .3;
+}
+
+.btn-shape:hover span {
+    animation: storm .4s linear both;
+}
+
+@keyframes storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-row label {
+    font-family: "Dokdo", system-ui;
+    font-size: 30px;
+    color: #260C1A;
+    line-height: 1;
+}
+
+.form-row input,
+.form-row textarea {
+    font-family: "Gaegu", sans-serif;
+    font-size: 22px;
+    color: #260C1A;
+    background-color: #ffe9c9; 
+    border: 3px solid rgba(38, 12, 26, 0.18);
+    border-radius: 18px;
+    padding: 12px 14px;
+    outline: none;
+    box-shadow: 0px 5px 5px #1a2c0a2e;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.form-row textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    border-color: #6D9349;
+    transform: translateY(-1px);
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+    color: rgba(38, 12, 26, 0.55);
+}

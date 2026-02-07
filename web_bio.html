@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Gaegu&family=Gowun+Dodum&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Naomi's Web Bio</title>
+</head>
+<body>
+    <nav>
+        <a class="nav_link" href="#Section2">About Me</a>
+        <a class="nav_link" href="#Section3">My Goals</a>
+        <a class="nav_link" href="#Section4">Contact Me</a>
+    </nav>
+ 
+
+    <div class="Section1">
+        <div class="iframe-overlay"></div>
+        <iframe class="HomePage" src="https://davvcdn.lon1.cdn.digitaloceanspaces.com/8219f069e7602bf457e1d899f4a586d7/c35c154678a88366ef68.html"></iframe>
+        
+    </div> 
+
+    <div id="Section2" class="Section2"> 
+        <div class="image">
+            <img src="image.jpg" alt="Picture of Naomi Dao holding a peace sign">
+            <p>Picture of Naomi Dao</p>
+        </div>
+        <div> 
+            <h2>About Me</h2>
+            <p>Hi! I'm <strong>Naomi Dao</strong>, a junior Computer Science student at Texas A&M University who's passionate about UI/UX, frontend development, and backend development. 
+                I enjoy working on projects that utilize creativity.
+            </p>
+            <h2>Hobbies</h2>
+            <p>If you don't see me in the classroom or working on projects, you can probably find me: </p>
+            <ul>
+                <li>Drawing</li>
+                <li>Crocheting</li>
+                <li>Eating</li>
+                <li>Shopping</li>
+            </ul>
+        </div>
+    </div> 
+
+    <div id="Section3" class="Section3">
+        <h2>My Goals</h2>
+        <p>As an aspiring web developer, it's important to me that my applications are inclusive, intuitive and welcoming to all users, regardless of their background or identity.</p>
+            
+        <p>Previously, I took <a href="https://lightfoot.engr.tamu.edu/course/csce-331-foundations-of-software-engineering/">Foundations of Software Engineering</a> <strong><em>(CSCE 331)</em></strong>, which was my first experience building a project from the bottom up, and fleshing out
+            the design so that it's user friendly and utilizes standard design practices. To learn more about it and improve my view on user experience, I've enrolled in 
+            Accessibility Computing <strong><em>(CSCE 432)</em></strong> and Human Computer Interaction <strong><em>(CSCE 436)</em></strong>. 
+        </p>
+        <button class="btn-shape">
+            <span class="title">
+            View More Bios
+            </span>
+        </button>
+    </div> 
+
+    <div id="Section4" class="Section4">
+    <h2>Contact Me!</h2>
+
+    <form class="contact-form" action="mailto:ndao@tamu.edu" method="post" enctype="text/plain">
+        <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-row">
+            <label for="mail">Email</label>
+            <input id="mail" type="email" name="mail" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <div class="buttons">
+            <button class="btn-shape" type="submit">
+                <span class="title">Send</span>
+            </button>
+
+            <button class="btn-shape" type="reset">
+                <span class="title">Reset</span>
+            </button>
+        </div>
+    </form>
+    </div>
+
+
+</body>
+</html>
